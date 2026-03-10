@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas de Omurice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h1>Omurice</h1>
+            </div>
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="pt">PT</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="jp">JP</button>
+            </div>
+        </div>
+        <nav class="menu-horizontal">
+            <ul>
+                <li><a href="index.html" data-i18n="nav_home">Início</a></li>
+                <li><a href="historia.html" data-i18n="nav_history">História</a></li>
+                <li><a href="ingredientes.html" data-i18n="nav_ingredients">Ingredientes</a></li>
+                <li><a href="receitas.html" class="active" data-i18n="nav_recipes">Receitas</a></li>
+                <li><a href="curiosidades.html" data-i18n="nav_curiosities">Curiosidades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1 data-i18n="recipes_title">Receitas de Omurice</h1>
+        </section>
+
+        <div class="recipe-tabs">
+            <button class="tab-btn active" onclick="showRecipe('classic')" data-i18n="classic_tab">Clássico</button>
+            <button class="tab-btn" onclick="showRecipe('creamy')" data-i18n="creamy_tab">Cremoso</button>
+            <button class="tab-btn" onclick="showRecipe('decorated')" data-i18n="decorated_tab">Decorado</button>
+        </div>
+
+        <div id="classic-recipe" class="recipe-content active">
+            <div class="recipe-header">
+                <img src="imagens/omurice-classic.jpg" alt="Omurice Clássico">
+                <h2 data-i18n="classic_title">Omurice Clássico Japonês</h2>
+            </div>
+            
+            <div class="recipe-sections">
+                <div class="recipe-section">
+                    <h3 data-i18n="ingredients">Ingredientes</h3>
+                    <ul>
+                        <li data-i18n="classic_ing_1">2 xícaras de arroz cozido</li>
+                        <li data-i18n="classic_ing_2">3 ovos</li>
+                        <li data-i18n="classic_ing_3">1 peito de frango picado</li>
+                        <li data-i18n="classic_ing_4">1/2 cebola picada</li>
+                        <li data-i18n="classic_ing_5">3 colheres de ketchup</li>
+                        <li data-i18n="classic_ing_6">Sal e pimenta a gosto</li>
+                    </ul>
+                </div>
+
+                <div class="recipe-section">
+                    <h3 data-i18n="preparation">Modo de Preparo</h3>
+                    <ol>
+                        <li data-i18n="classic_step_1">Refogue a cebola e o frango em uma frigideira</li>
+                        <li data-i18n="classic_step_2">Adicione o arroz e o ketchup, misture bem</li>
+                        <li data-i18n="classic_step_3">Bata os ovos e faça uma omelete fina</li>
+                        <li data-i18n="classic_step_4">Coloque o arroz no centro da omelete e feche</li>
+                        <li data-i18n="classic_step_5">Decore com ketchup por cima</li>
+                    </ol>
+                </div>
+
+                <div class="recipe-section">
+                    <h3 data-i18n="tips">Dicas</h3>
+                    <p data-i18n="classic_tip">Use arroz japonês de grão curto para melhor textura.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="creamy-recipe" class="recipe-content">
+            <div class="recipe-header">
+                <img src="imagens/omurice-creamy.jpg" alt="Omurice Cremoso">
+                <h2 data-i18n="creamy_title">Omurice Super Cremoso</h2>
+            </div>
+            
+            <div class="recipe-sections">
+                <div class="recipe-section">
+                    <h3 data-i18n="ingredients">Ingredientes</h3>
+                    <ul>
+                        <li data-i18n="creamy_ing_1">2 xícaras de arroz</li>
+                        <li data-i18n="creamy_ing_2">4 ovos (apenas gemas)</li>
+                        <li data-i18n="creamy_ing_3">2 colheres de maionese Kewpie</li>
+                        <li data-i18n="creamy_ing_4">1 colher de manteiga</li>
+                        <li data-i18n="creamy_ing_5">3 colheres de ketchup</li>
+                        <li data-i18n="creamy_ing_6">Creme de leite fresco</li>
+                    </ul>
+                </div>
+
+                <div class="recipe-section">
+                    <h3 data-i18n="preparation">Modo de Preparo</h3>
+                    <ol>
+                        <li data-i18n="creamy_step_1">Misture as gemas com maionese e creme de leite</li>
+                        <li data-i18n="creamy_step_2">Faça o arroz temperado com ketchup</li>
+                        <li data-i18n="creamy_step_3">Na frigideira, faça a omelete em fogo baixo</li>
+                        <li data-i18n="creamy_step_4">Mexa constantemente para criar textura cremosa</li>
+                        <li data-i18n="creamy_step_5">Sirva imediatamente com arroz no centro</li>
+                    </ol>
+                </div>
+
+                <div class="recipe-section">
+                    <h3 data-i18n="tips">Dicas</h3>
+                    <p data-i18n="creamy_tip">O segredo da cremosidade é não cozinhar demais os ovos.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="decorated-recipe" class="recipe-content">
+            <div class="recipe-header">
+                <img src="imagens/omurice-decorated.jpg" alt="Omurice Decorado">
+                <h2 data-i18n="decorated_title">Omurice Decorado</h2>
+            </div>
+            
+            <div class="recipe-sections">
+                <div class="recipe-section">
+                    <h3 data-i18n="ingredients">Ingredientes</h3>
+                    <ul>
+                        <li data-i18n="decorated_ing_1">Base da receita clássica</li>
+                        <li data-i18n="decorated_ing_2">Ketchup extra para desenho</li>
+                        <li data-i18n="decorated_ing_3">Algas nori para detalhes</li>
+                        <li data-i18n="decorated_ing_4">Legumes coloridos</li>
+                        <li data-i18n="decorated_ing_5">Molho tonkatsu</li>
+                    </ul>
+                </div>
+
+                <div class="recipe-section">
+                    <h3 data-i18n="preparation">Modo de Preparo</h3>
+                    <ol>
+                        <li data-i18n="decorated_step_1">Prepare o omurice clássico</li>
+                        <li data-i18n="decorated_step_2">Use ketchup para desenhar rostos</li>
+                        <li data-i18n="decorated_step_3">Corte a nori para fazer olhos</li>
+                        <li data-i18n="decorated_step_4">Use legumes para detalhes coloridos</li>
+                        <li data-i18n="decorated_step_5">Finalize com molho tonkatsu ao redor</li>
+                    </ol>
+                </div>
+
+                <div class="recipe-section">
+                    <h3 data-i18n="tips">Dicas</h3>
+                    <p data-i18n="decorated_tip">Use um palito para desenhos precisos com ketchup.</p>
+                </div>
+            </div>
+        </div>
+
+        
+    </main>
+
+    <footer>
+        <p> 2026 Omurice - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

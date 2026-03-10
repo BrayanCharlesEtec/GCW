@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidades sobre Omurice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h1>Omurice</h1>
+            </div>
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="pt">PT</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="jp">JP</button>
+            </div>
+        </div>
+        <nav class="menu-horizontal">
+            <ul>
+                <li><a href="index.html" data-i18n="nav_home">Início</a></li>
+                <li><a href="historia.html" data-i18n="nav_history">História</a></li>
+                <li><a href="ingredientes.html" data-i18n="nav_ingredients">Ingredientes</a></li>
+                <li><a href="receitas.html" data-i18n="nav_recipes">Receitas</a></li>
+                <li><a href="curiosidades.html" class="active" data-i18n="nav_curiosities">Curiosidades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1 data-i18n="curiosities_title">Curiosidades sobre Omurice</h1>
+        </section>
+
+        <section class="curiosity-section">
+            <h2 data-i18n="fun_facts">Fatos Interessantes</h2>
+            <div class="facts-grid">
+                <div class="fact-card">
+                    <h3 data-i18n="fact_1_title">Estrela de Anime</h3>
+                    <p data-i18n="fact_1_desc">Omurice aparece em diversos animes como "Shokugeki no Soma".</p>
+                </div>
+                <div class="fact-card">
+                    <h3 data-i18n="fact_2_title">Arte com Ketchup</h3>
+                    <p data-i18n="fact_2_desc">Existem competições no Japão de desenhos com ketchup.</p>
+                </div>
+                <div class="fact-card">
+                    <h3 data-i18n="fact_3_title">Comida de Conforto</h3>
+                    <p data-i18n="fact_3_desc">No Japão, é considerado uma comida da alma.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="curiosity-section">
+            <h2 data-i18n="world_title">Omurice pelo Mundo</h2>
+            <div class="world-grid">
+                <div class="world-item">
+                    <h3 data-i18n="japan_version">Japão</h3>
+                    <p data-i18n="japan_desc">Versão original com arroz temperado e frango</p>
+                </div>
+                <div class="world-item">
+                    <h3 data-i18n="korea_version">Coreia</h3>
+                    <p data-i18n="korea_desc">Adicionam queijo e servem com molho demiglace</p>
+                </div>
+                <div class="world-item">
+                    <h3 data-i18n="thailand_version">Tailândia</h3>
+                    <p data-i18n="thailand_desc">Versão picante com pimenta</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="curiosity-section">
+            <h2 data-i18n="records_title">Recordes e Números</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">1902</span>
+                    <span class="stat-label" data-i18n="stat_1">Ano de criação</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100+</span>
+                    <span class="stat-label" data-i18n="stat_2">Variações diferentes</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label" data-i18n="stat_3">Restaurantes em Tóquio</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p> 2026 Omurice - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

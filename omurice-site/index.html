@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omurice - Omelete de Arroz Japonês</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h1>Omurice</h1>
+            </div>
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="pt">PT</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="jp">JP</button>
+            </div>
+        </div>
+        <nav class="menu-horizontal">
+            <ul>
+                <li><a href="index.html" class="active" data-i18n="nav_home">Início</a></li>
+                <li><a href="historia.html" data-i18n="nav_history">História</a></li>
+                <li><a href="ingredientes.html" data-i18n="nav_ingredients">Ingredientes</a></li>
+                <li><a href="receitas.html" data-i18n="nav_recipes">Receitas</a></li>
+                <li><a href="curiosidades.html" data-i18n="nav_curiosities">Curiosidades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2 data-i18n="hero_title">Omelete de Arroz Japonês</h2>
+                <p data-i18n="hero_subtitle">Uma combinação de arroz temperado e ovo cremoso</p>
+                <a href="receitas.html" class="btn-primary" data-i18n="hero_button">Ver Receitas</a>
+            </div>
+            <div class="hero-image">
+                <img src="imagens/hero-omurice.jpg" alt="Omurice">
+            </div>
+        </section>
+
+        <section class="featured-cards">
+            <div class="card">
+                <h3 data-i18n="featured_1_title">O que é Omurice?</h3>
+                <p data-i18n="featured_1_desc">Omurice é um prato da culinária japonesa que consiste em arroz frito envolto em uma camada de ovo.</p>
+            </div>
+            <div class="card">
+                <h3 data-i18n="featured_2_title">Por que é especial?</h3>
+                <p data-i18n="featured_2_desc">A combinação do arroz temperado com ketchup e o ovo cria uma experiência única de sabores.</p>
+            </div>
+            <div class="card">
+                <h3 data-i18n="featured_3_title">Popular no Japão</h3>
+                <p data-i18n="featured_3_desc">Muito popular em restaurantes de estilo ocidental no Japão.</p>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h2 data-i18n="gallery_title">Galeria de Omurice</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="imagens/omurice-classic.jpg" alt="Omurice Clássico">
+                    <p data-i18n="gallery_1">Omurice Clássico</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagens/omurice-decorated.jpg" alt="Omurice Decorado">
+                    <p data-i18n="gallery_2">Omurice Decorado</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagens/omurice-creamy.jpg" alt="Omurice Cremoso">
+                    <p data-i18n="gallery_3">Omurice Cremoso</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p> 2026 Omurice - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

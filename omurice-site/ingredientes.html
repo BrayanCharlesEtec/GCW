@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingredientes do Omurice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h1>Omurice</h1>
+            </div>
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="pt">PT</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="jp">JP</button>
+            </div>
+        </div>
+        <nav class="menu-horizontal">
+            <ul>
+                <li><a href="index.html" data-i18n="nav_home">Início</a></li>
+                <li><a href="historia.html" data-i18n="nav_history">História</a></li>
+                <li><a href="ingredientes.html" class="active" data-i18n="nav_ingredients">Ingredientes</a></li>
+                <li><a href="receitas.html" data-i18n="nav_recipes">Receitas</a></li>
+                <li><a href="curiosidades.html" data-i18n="nav_curiosities">Curiosidades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1 data-i18n="ingredients_title">Ingredientes do Omurice</h1>
+        </section>
+
+        <section class="ingredients-section">
+            <div class="ingredient-category">
+                <h2 data-i18n="base_ingredients">Ingredientes Base</h2>
+                <div class="ingredient-grid">
+                    <div class="ingredient-card">
+                        <img src="imagens/arroz-japones.jpg" alt="Arroz Japonês">
+                        <h3 data-i18n="rice">Arroz Japonês</h3>
+                        <p data-i18n="rice_desc">Arroz de grão curto, essencial para a textura</p>
+                    </div>
+                    <div class="ingredient-card">
+                        <img src="imagens/ovos-frescos.jpg" alt="Ovos">
+                        <h3 data-i18n="eggs">Ovos Frescos</h3>
+                        <p data-i18n="eggs_desc">Ovos de qualidade para uma omelete</p>
+                    </div>
+                    <div class="ingredient-card">
+                        <img src="imagens/ketchup.jpg" alt="Ketchup">
+                        <h3 data-i18n="ketchup">Ketchup</h3>
+                        <p data-i18n="ketchup_desc">Tempera o arroz e dá cor característica</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ingredient-category">
+                <h2 data-i18n="rice_ingredients">Ingredientes para o Arroz</h2>
+                <div class="ingredient-grid">
+                    <div class="ingredient-card">
+                        <img src="imagens/cebola.jpg" alt="Cebola">
+                        <h3 data-i18n="onion">Cebola</h3>
+                        <p data-i18n="onion_desc">Cebola picada para dar sabor ao arroz</p>
+                    </div>
+                    <div class="ingredient-card">
+                        <img src="imagens/frango.jpg" alt="Frango">
+                        <h3 data-i18n="chicken">Peito de Frango</h3>
+                        <p data-i18n="chicken_desc">Cubos de frango para a versão clássica</p>
+                    </div>
+                    <div class="ingredient-card">
+                        <img src="imagens/ervilhas.jpg" alt="Ervilhas">
+                        <h3 data-i18n="peas">Ervilhas</h3>
+                        <p data-i18n="peas_desc">Para cor e textura adicional</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ingredient-category">
+                <h2 data-i18n="seasonings">Temperos e Finalização</h2>
+                <div class="ingredient-grid">
+                    <div class="ingredient-card">
+                        <img src="imagens/shoyu.jpg" alt="Molho Shoyu">
+                        <h3 data-i18n="soysauce">Molho Shoyu</h3>
+                        <p data-i18n="soysauce_desc">Um toque de umami ao arroz</p>
+                    </div>
+                    <div class="ingredient-card">
+                        <img src="imagens/maionese.jpg" alt="Maionese Japonesa">
+                        <h3 data-i18n="mayo">Maionese Japonesa</h3>
+                        <p data-i18n="mayo_desc">Kewpie mayo para cremosidade extra</p>
+                    </div>
+                    <div class="ingredient-card">
+                        <img src="imagens/salsinha.jpg" alt="Salsinha">
+                        <h3 data-i18n="parsley">Salsinha</h3>
+                        <p data-i18n="parsley_desc">Para decorar e frescor</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p> 2026 Omurice - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

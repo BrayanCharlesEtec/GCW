@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História do Omurice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h1>Omurice</h1>
+            </div>
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="pt">PT</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="jp">JP</button>
+            </div>
+        </div>
+        <nav class="menu-horizontal">
+            <ul>
+                <li><a href="index.html" data-i18n="nav_home">Início</a></li>
+                <li><a href="historia.html" class="active" data-i18n="nav_history">História</a></li>
+                <li><a href="ingredientes.html" data-i18n="nav_ingredients">Ingredientes</a></li>
+                <li><a href="receitas.html" data-i18n="nav_recipes">Receitas</a></li>
+                <li><a href="curiosidades.html" data-i18n="nav_curiosities">Curiosidades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1 data-i18n="history_title">A História do Omurice</h1>
+        </section>
+
+        <section class="history-timeline">
+            <div class="history-item">
+                <div class="year-badge">1902</div>
+                <div class="history-content">
+                    <h2 data-i18n="origin_title">O Início em Tóquio</h2>
+                    <p data-i18n="origin_desc">O Omurice surgiu pela primeira vez em um restaurante ocidental chamado "Rengatei" no bairro de Ginza, em Tóquio. Inspirado na culinária europeia, o chef criou uma versão japonesa do omelete recheado com arroz.</p>
+                    <img src="imagens/rengatei.jpg" alt="Restaurante Rengatei">
+                </div>
+            </div>
+
+            <div class="history-item">
+                <div class="year-badge">1950-60</div>
+                <div class="history-content">
+                    <h2 data-i18n="evolution_title">Popularização no Pós-Guerra</h2>
+                    <p data-i18n="evolution_desc">Após a Segunda Guerra Mundial, o Omurice se tornou popular como um prato caseiro acessível. Donas de casa japonesas começaram a criar suas próprias variações.</p>
+                    <img src="imagens/omurice-vintage.jpg" alt="Omurice vintage">
+                </div>
+            </div>
+
+            <div class="history-item">
+                <div class="year-badge">Atual</div>
+                <div class="history-content">
+                    <h2 data-i18n="modern_title">Omurice na Cultura Pop</h2>
+                    <p data-i18n="modern_desc">Hoje, o Omurice é um ícone da cultura pop japonesa, aparecendo em animes e sendo servido em cafés temáticos.</p>
+                    <img src="imagens/omurice-modern.jpg" alt="Omurice moderno">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p> 2026 Omurice - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
