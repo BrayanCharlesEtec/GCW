@@ -1,0 +1,3 @@
+HTML: cria a estrutura do menu com listas e sublistas, organiza os itens "Início", os três anos do curso com suas matérias dentro do submenu e o "Contato" além de exibir o título e a frase de boas-vindas na página
+
+CSS: estiliza o site com as cores rosa claro no fundo e azul escuro no menu\ deixa o menu fixo no topo da tela, faz o submenu aparecer quando passa o mouse por cima, adiciona animações suaves como fade e escala nos links e tambem é

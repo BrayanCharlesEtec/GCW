@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #ffe6f0 0%, #ffd9e8 100%);
+}
+
+nav {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 2px solid #ff69b4;
+    transition: all 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #ff69b4;
+    color: #1a1a2e;
+    transform: scale(1.05);
+}
+
+nav ul li .dropdown {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    min-width: 200px;
+    display: none;
+    border: 1px solid #ff69b4;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+nav ul li .dropdown li {
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid rgba(255,105,180,0.3);
+    overflow: hidden;
+}
+
+nav ul li .dropdown li:last-child {
+    border-bottom: none;
+}
+
+nav ul li .dropdown li a {
+    padding: 8px 15px;
+    font-size: 14px;
+    color: #ffd9e8;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+nav ul li .dropdown li a:hover {
+    background-color: #ff69b4;
+    color: #1a1a2e;
+    padding-left: 25px;
+    transform: scale(1.02);
+}
+
+.content {
+    margin-top: 60px;
+    padding: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    animation: fadeInUp 0.6s ease;
+}
+
+h1 {
+    color: #1a1a2e;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+h1:hover {
+    transform: scale(1.02);
+    color: #ff69b4;
+}
+
+p {
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+p:hover {
+    transform: translateX(5px);
+}
+
+/* Animações */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
